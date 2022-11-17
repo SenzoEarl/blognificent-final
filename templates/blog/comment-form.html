@@ -1,0 +1,11 @@
+{% load crispy_forms_filters %}
+<div class="card mt-3 p-3">
+    <div class="card-body">
+        <h5 class="card-title">New Comment</h5>
+        <form action="{% url 'blog:post_comment' post.id %}" method="post">
+            {{ form | crispy }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-success" value="Comment">
+        </form>
+    </div>
+</div>

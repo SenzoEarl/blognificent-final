@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="text-center justify-content-center align-items-center">
+        {% if comment %}
+            <h1 class="text-success">Your comment has been added</h1><br>
+
+            <button type="button" class="btn btn-success btn-lg">
+                <a href="{{ post.get_absolute_url }}">
+                    Back to post
+                </a>
+            </button>
+
+        {% else %}
+            {% include 'blog/comment-form.html' %}
+        {% endif %}
+    </div>
+{% endblock %}
+
+
+
