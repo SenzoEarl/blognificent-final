@@ -25,7 +25,7 @@ load_dotenv()
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -138,6 +138,6 @@ TAGGIT_CASE_INSENSITIVE = True
 
 SESSION_COOKIE_SECURE = True
 
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 
 CSRF_COOKIE_SECURE = True

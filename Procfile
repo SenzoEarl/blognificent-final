@@ -1,1 +1,1 @@
-web: pip install django-crispy-forms && python manage.py migrate && gunicorn blognificent.wsgi
+web: python manage.py migrate && gunicorn blognificent.wsgi
