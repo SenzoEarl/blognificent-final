@@ -127,7 +127,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Email Confuiguration
+# Email Configuration
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'senzo.e.maseko@gmail.com'
 EMAIL_HOST_PASSWORD = 'siuznwlugtsnexjm'
