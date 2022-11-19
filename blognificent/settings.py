@@ -141,3 +141,5 @@ SESSION_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = False
 
 CSRF_COOKIE_SECURE = False
+
+CSRF_TRUSTED_ORIGINS = ['https://blognificent.up.railway.app']
