@@ -144,6 +144,5 @@ CSRF_COOKIE_SECURE = False
 
 CSRF_TRUSTED_ORIGINS = ['https://blognificent.up.railway.app']
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = ''
 
-STATIC_URL = '/static/'
