@@ -25,7 +25,7 @@ load_dotenv()
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -143,3 +143,7 @@ SECURE_SSL_REDIRECT = False
 CSRF_COOKIE_SECURE = False
 
 CSRF_TRUSTED_ORIGINS = ['https://blognificent.up.railway.app']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATIC_URL = '/static/'
