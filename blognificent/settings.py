@@ -16,10 +16,15 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 load_dotenv()
+import mimetypes
+
+mimetypes.add_type("text/css", ".css", True)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
@@ -140,5 +145,14 @@ SESSION_COOKIE_SECURE = True
 
 CSRF_TRUSTED_ORIGINS = ['https://blognificent.up.railway.app']
 
-STATIC_ROOT = ''
+STATIC_ROOT = BASE_DIR / 'static'
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static/admin'
+]
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
