@@ -1,0 +1,43 @@
+[
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "title": "Welcome to Blognificent",
+    "slug": "welcome-to-blognificent",
+    "content": "Welcome to Blognficient.\r\nBuilt using Django & Bootstrap",
+    "created": "2022-11-24T12:29:43.111Z",
+    "publish": "2022-11-24T12:28:50Z",
+    "updated": "2022-11-24T12:29:43.111Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "title": "Recommendation: Mr Morale & the Big Steppers",
+    "slug": "mr-morale",
+    "content": "A classic album by Kendrick Lamar",
+    "created": "2022-11-24T12:30:47.935Z",
+    "publish": "2022-11-24T12:29:43Z",
+    "updated": "2022-11-24T12:30:47.935Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "name": "Senzo",
+    "email": "senzo.e.maseko@gmail.com",
+    "content": "I like it here",
+    "created": "2022-11-24T12:31:27.312Z",
+    "updated": "2022-11-24T12:31:27.312Z",
+    "active": true
+  }
+}
+]
