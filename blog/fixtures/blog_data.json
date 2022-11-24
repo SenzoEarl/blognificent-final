@@ -28,6 +28,20 @@
   }
 },
 {
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "title": "Lorem Ipsum",
+    "slug": "lorem-ipsum",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ipsum et enim pellentesque fringilla. Proin consequat diam ut maximus blandit. Curabitur sit amet ante sed augue consequat dapibus quis non nulla. Fusce ut erat imperdiet, hendrerit lectus non, blandit purus. Sed euismod egestas consectetur. Fusce a porttitor eros. Suspendisse potenti. Donec vestibulum sodales massa, at facilisis mauris efficitur a. Nulla vitae felis eget libero tincidunt vehicula. Proin condimentum libero vel augue lacinia volutpat. Sed sed aliquet est. Suspendisse a purus ut tellus imperdiet pellentesque vel vitae nibh. Duis pharetra, ex sed pretium ultricies, elit odio molestie nisi, ac lacinia risus tortor rutrum justo. Integer eleifend tempor neque rhoncus iaculis. Quisque ac lorem vulputate, condimentum nisl et, feugiat arcu. Proin malesuada tortor felis, in pharetra lectus dignissim non.\r\n\r\nCras non est lacus. Aenean accumsan vestibulum orci. Donec maximus tempor augue nec dignissim. Nullam vestibulum justo sed risus faucibus finibus. Nunc quis dapibus ante, vitae congue nibh. Nunc laoreet sem nisi, sit amet egestas massa ultricies tincidunt. In laoreet posuere odio quis molestie. Aenean malesuada ac eros dapibus auctor. Nam volutpat porta odio tincidunt placerat. Etiam viverra justo quis tellus condimentum, at eleifend lorem efficitur. Pellentesque pharetra nibh sed mi tempor volutpat. Vestibulum volutpat mi in ipsum venenatis, ut interdum magna lacinia. Proin ac justo quam. Curabitur pretium sagittis lorem, vitae laoreet leo aliquet ac.",
+    "created": "2022-11-24T12:41:00.607Z",
+    "publish": "2022-11-24T12:39:54Z",
+    "updated": "2022-11-24T12:41:00.607Z",
+    "status": "PB"
+  }
+},
+{
   "model": "blog.comment",
   "pk": 1,
   "fields": {
