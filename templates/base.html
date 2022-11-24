@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/86dd53c953.js" crossorigin="anonymous"></script>
-
+    <style type="text/css" rel="stylesheet">
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+    </style>
 
 </head>
 <body>
@@ -37,13 +44,16 @@
     </div>
 </nav>
 
+{#col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 #}
+{#col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4#}
 
-<div class="container-fluid bg-secondary vh-100 rounded-2">
-    <div class="row pl-5 pr-5 pt-2 h-75">
-        <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-8 bg-light gx-1">
+<div class="container-fluid bg-secondary">
+    <div class="row p-3 m-3 rounded-3 align-self-stretch">
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 bg-info">
             {% block content %}{% endblock %}
+        <p>Hello world</p>
         </div>
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 bg-light">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 bg-light">
             {% block right %}{% endblock %}
         </div>
     </div>
